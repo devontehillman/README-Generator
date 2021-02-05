@@ -22,48 +22,48 @@ inquirer.prompt([
     name: 'title',
     message: questions[0],
     },
-    // {
-    // type: 'input',
-    // name: 'description',
-    // message: questions[1],
-    // },
-    // {
-    // type: 'input',
-    // name: 'contents',
-    // message: questions[2],
-    // },
-    // {
-    // type: 'input',
-    // name: 'installation',
-    // message: questions[3],
-    // },
-    // {
-    // type: 'input',
-    // name: 'usage',
-    // message: questions[4],
-    // },
-    // {
-    // type: 'checkbox',
-    // message: questions[5],
-    // name: 'license',
-    // choices: ['No License','Apache','BSD 3','BSD 2','GPL','LGPL','MIT','MOZILLA',
-    // 'Common Development and Distribution License','Eclipse Public'],
-    // },
-    // {
-    //     type: 'input',
-    // name: 'contributing',
-    // message: questions[6],
-    // },
-    // {
-    //     type: 'input',
-    // name: 'tests',
-    // message: questions[7],
-    // },
-    // {
-    //     type: 'input',
-    // name: 'questions',
-    // message: questions[8],
-    // }
+    {
+    type: 'input',
+    name: 'description',
+    message: questions[1],
+    },
+    {
+    type: 'input',
+    name: 'contents',
+    message: questions[2],
+    },
+    {
+    type: 'input',
+    name: 'installation',
+    message: questions[3],
+    },
+    {
+    type: 'input',
+    name: 'usage',
+    message: questions[4],
+    },
+    {
+    type: 'checkbox',
+    message: questions[5],
+    name: 'license',
+    choices: ['No License','Apache','BSD 3','BSD 2','GPL','LGPL','MIT','MOZILLA',
+    'Common Development and Distribution License','Eclipse Public'],
+    },
+    {
+        type: 'input',
+    name: 'contributing',
+    message: questions[6],
+    },
+    {
+        type: 'input',
+    name: 'tests',
+    message: questions[7],
+    },
+    {
+        type: 'input',
+    name: 'questions',
+    message: questions[8],
+    }
 ]) .then (data => {
     
 //const filename = `${data.name.toLowerCase().split(' ').join('')}.json`;
