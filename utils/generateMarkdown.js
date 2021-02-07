@@ -35,10 +35,9 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
  function generateMarkdown(data) {
   let arryToReturn = []
-    
 
   arryToReturn.push(`# ${data.title}`)
-  arryToReturn.push(`\n(Githubprofile)[https://github.com/${data.github}]`)
+  arryToReturn.push(`\n[Githubprofile](https://github.com/${data.github})\n`)
   
   arryToReturn.push(renderLicenseBadge(data.license))
 
@@ -48,7 +47,7 @@ function renderLicenseSection(license) {
   arryToReturn.push(
   `\n# Description\n${data.description}\n`
     )
-   }
+  }
 
   if (data.title === ''){
     console.log('no tile');
@@ -92,7 +91,7 @@ function renderLicenseSection(license) {
     console.log('no tile');
   } else{
   arryToReturn.push(
-  `\n# license\n To see license click ${data.license} badge at the top of this README.\n`
+  `\n# license\n To see infomation on the ${data.license} click the badge at the top of this README.\n`
   ) 
   }
 
