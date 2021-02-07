@@ -22,11 +22,16 @@ inquirer.prompt([
     },
     {
     type: 'input',
+    name: 'github',
+    message: 'Enter GitHub Username.',
+    },
+    {
+    type: 'input',
     name: 'description',
     message: questions[1],
     },
     {
-    type: 'input',
+    type: 'confirm',
     name: 'contents',
     message: questions[2],
     },
@@ -44,8 +49,7 @@ inquirer.prompt([
     type: 'checkbox',
     message: questions[5],
     name: 'license',
-    choices: ['No License','Apache','BSD 3','BSD 2','GPL','LGPL','MIT','MOZILLA',
-    'Common Development and Distribution License','Eclipse Public'],
+    choices: ['No License','Apache','MIT','GPL'],
     },
     {
         type: 'input',
@@ -64,6 +68,8 @@ inquirer.prompt([
     }
 ]).then((data) => {
 //const filename = `${data.name.toLowerCase().split(' ').join('')}.json`;
+    console.log(data)
+
     const file = markDown(data);
 
     fs.writeFile('README.MD', file , (err) =>
