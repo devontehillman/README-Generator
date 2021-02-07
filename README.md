@@ -1,9 +1,9 @@
 # README Generator
 [Github profile](https://github.com/devontehillman)
- 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+
 # Description
-This application uses node.js to create a README.md from the command line.
+This application uses node.js to create a README.md from the command line. Users are taken through various prompts and a README file is created
 
 Table of Contents
 1. [Description](#Description)
@@ -12,14 +12,18 @@ Table of Contents
 4. [Contributing](#Contributing)
 5. [Tests](#Tests)
 6. [Questions](#Questions)
+
 # Installation
-Hello
+Go to this https://github.com/devontehillman/README-Generator and the clone repository. 
 
 # Usage
-Instructions on how to use project 
+Instructions on how to use project. open integrated teminal at the README-Generator file 
+type npm init in the comand line, next type npm install inquirer --save, now run node index in the command line,
+fill out prompt (if promt is left unanswered it wont apear, to use checkbox you select with space bar), after this 
+the README is created. 
 
 # license
-MIT
+No license
 
 # Contributing
 Information on how people should go about contributing to my repository.
@@ -29,3 +33,5 @@ Area where user can include how to test out their aplication
 
 # Questions
 A link to email and info on how to get in touch with developer.
+
+
