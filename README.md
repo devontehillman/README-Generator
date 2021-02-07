@@ -18,13 +18,13 @@ Table of Contents
 Go to this https://github.com/devontehillman/README-Generator and the clone repository. 
 
 # Usage
-Instructions on how to use project. open integrated teminal at the README-Generator file 
+Open integrated teminal at the README-Generator file 
 type npm init in the comand line, next type npm install inquirer --save, now run node index in the command line,
 fill out prompt (if promt is left unanswered it wont apear, to use checkbox you select with space bar), after this 
 the README is created. 
 
 # license
-No license
+To see infomation on the no license click the badge at the top of this README.
 
 # Contributing
 Information on how people should go about contributing to my repository.
